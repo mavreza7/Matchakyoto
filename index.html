@@ -3,63 +3,69 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Matcha Fresh</title>
+<title>Matcha Viral</title>
 
 <style>
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f7f7f7;
+  background: #f6f6f6;
 }
 
-/* CONTAINER RESPONSIVE */
-.container {
-  max-width: 900px;
-  width: 100%;
-  margin: auto;
-  padding: 15px;
-  box-sizing: border-box;
-}
-
-/* HEADER */
+/* HEADER VIRAL STYLE */
 .header {
-  background: #6b8e23;
+  background: linear-gradient(135deg, #6b8e23, #a4d65e);
   color: white;
-  padding: 25px 15px;
-  border-radius: 0 0 20px 20px;
   text-align: center;
+  padding: 30px 15px;
+  border-radius: 0 0 25px 25px;
 }
 
 .header h1 {
   margin: 0;
-  font-size: 22px;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .header p {
   margin-top: 5px;
   font-size: 14px;
+  opacity: 0.9;
 }
 
-/* MENU GRID RESPONSIVE */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-  margin-top: 20px;
+/* BADGE VIRAL */
+.badge {
+  display: inline-block;
+  background: red;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-top: 10px;
 }
 
-/* CARD */
+/* CONTAINER */
+.container {
+  max-width: 420px;
+  margin: auto;
+  padding: 15px;
+}
+
+/* MENU CARD VIRAL */
 .card {
   background: white;
-  border-radius: 15px;
+  border-radius: 18px;
   padding: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-  text-align: left;
+  margin: 12px 0;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   transition: 0.2s;
 }
 
 .card:hover {
-  transform: translateY(-3px);
+  transform: scale(1.02);
 }
 
 .card h3 {
@@ -70,19 +76,18 @@ body {
 .price {
   color: #6b8e23;
   font-weight: bold;
-  margin-top: 5px;
 }
 
-/* BUTTON */
+/* CTA BUTTON VIRAL */
 .btn {
   display: block;
   margin: 12px 0;
-  padding: 14px;
-  border-radius: 12px;
+  padding: 15px;
+  border-radius: 14px;
   text-decoration: none;
   font-weight: bold;
-  color: white;
   text-align: center;
+  color: white;
   transition: 0.2s;
 }
 
@@ -90,9 +95,37 @@ body {
   transform: scale(1.03);
 }
 
-.wa { background: #25D366; }
-.maps { background: #6b8e23; }
-.menu { background: #333; }
+.wa {
+  background: #25D366;
+}
+
+.maps {
+  background: #6b8e23;
+}
+
+/* VIRAL CTA BOX */
+.cta-box {
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.cta-box p {
+  margin: 5px 0;
+}
+
+/* ANIMASI VIRAL ENTRY */
+.fade {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0);}
+}
 
 /* FOOTER */
 .footer {
@@ -101,98 +134,68 @@ body {
   color: gray;
   margin-top: 20px;
 }
-
-/* ===================== */
-/* RESPONSIVE BREAKPOINT */
-/* ===================== */
-
-/* HP kecil */
-@media (max-width: 480px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
-  .header h1 {
-    font-size: 20px;
-  }
-}
-
-/* Tablet */
-@media (min-width: 481px) and (max-width: 768px) {
-  .grid {
-    grid-template-columns: 2fr;
-  }
-}
-
-/* Laptop besar */
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1000px;
-  }
-
-  .card h3 {
-    font-size: 18px;
-  }
-}
 </style>
 
 </head>
 
 <body>
 
+<div class="header fade">
+  <h1>🍵 MATCHA FRESH</h1>
+  <p>Bekasi Utara • Fresh Daily • Viral Drink</p>
+  <div class="badge">🔥 BEST SELLER</div>
+</div>
+
 <div class="container">
 
-  <div class="header">
-    <h1>🍵 MATCHA FRESH</h1>
-    <p>Bekasi Utara • Fresh Daily</p>
+  <!-- CTA VIRAL -->
+  <div class="cta-box fade">
+    <p>💚 Fresh dibuat saat order</p>
+    <p>⚡ Order cepat via WhatsApp</p>
   </div>
 
-  <!-- MENU -->
-  <div class="grid">
-
-    <div class="card">
-      <h3>Matcha Original</h3>
-      <div class="price">Rp 10K</div>
-    </div>
-
-    <div class="card">
-      <h3>Matcha Pinkberry</h3>
-      <div class="price">Rp 12K</div>
-    </div>
-
-    <div class="card">
-      <h3>Matcha Latte</h3>
-      <div class="price">Rp 12K</div>
-    </div>
-
-    <div class="card">
-      <h3>Matcha Seasalt</h3>
-      <div class="price">Rp 15K</div>
-    </div>
-
-    <div class="card">
-      <h3>Caramel Crumbel</h3>
-      <div class="price">Rp 3K</div>
-    </div>
-
-    <div class="card">
-      <h3>Seasalt Cream</h3>
-      <div class="price">Rp 3K</div>
-    </div>
-
+  <!-- MENU VIRAL -->
+  <div class="card fade">
+    <h3>Matcha Original</h3>
+    <div class="price">Rp 10K</div>
   </div>
 
-  <!-- BUTTON -->
-  <a href="https://wa.me/6287775620146" class="btn wa">
-    💬 Order WhatsApp
+  <div class="card fade">
+    <h3>Matcha Pinkberry</h3>
+    <div class="price">Rp 12K</div>
+  </div>
+
+  <div class="card fade">
+    <h3>Matcha Latte</h3>
+    <div class="price">Rp 12K</div>
+  </div>
+
+  <div class="card fade">
+    <h3>Matcha Seasalt</h3>
+    <div class="price">Rp 15K</div>
+  </div>
+
+  <div class="card fade">
+    <h3>Caramel Crumbel</h3>
+    <div class="price">Rp 3K</div>
+  </div>
+
+  <div class="card fade">
+    <h3>Seasalt Cream</h3>
+    <div class="price">Rp 3K</div>
+  </div>
+
+  <!-- BUTTON VIRAL -->
+  <a href="https://wa.me/6287775620146" class="btn wa fade">
+    💬 Order Sekarang (Fast Response)
   </a>
 
-  <a href="https://maps.app.goo.gl/wvKS5eaR32V3WFxc8" class="btn maps" target="_blank">
-    📍 Lihat Lokasi
+  <a href="https://maps.app.goo.gl/wvKS5eaR32V3WFxc8" class="btn maps fade" target="_blank">
+    📍 Lihat Lokasi Kami
   </a>
 
   <div class="footer">
-    © Matcha Fresh • All devices friendly 🍵
+    © Matcha Fresh • Viral IG Landing Page
   </div>
 
 </div>
