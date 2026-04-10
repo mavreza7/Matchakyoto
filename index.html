@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Matcha Fresh Viral</title>
+<title>Matcha Fresh Order</title>
 
 <style>
 body {
@@ -29,7 +29,6 @@ body {
 .header p {
   margin-top: 5px;
   font-size: 14px;
-  opacity: 0.9;
 }
 
 .badge {
@@ -59,7 +58,7 @@ body {
   box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
-/* CARD MENU */
+/* CARD */
 .card {
   background: white;
   border-radius: 18px;
@@ -69,11 +68,6 @@ body {
   display: flex;
   gap: 10px;
   align-items: center;
-  transition: 0.2s;
-}
-
-.card:hover {
-  transform: scale(1.02);
 }
 
 .card img {
@@ -108,7 +102,7 @@ body {
 .wa { background: #25D366; }
 .maps { background: #6b8e23; }
 
-/* LOKASI */
+/* LOCATION */
 .location {
   background: white;
   padding: 15px;
@@ -139,6 +133,7 @@ body {
 <div class="header">
   <h1>🍵 MATCHA FRESH</h1>
   <p>Bekasi Utara • Fresh Made Daily</p>
+  <div class="badge">🔥 BEST SELLER: MATCHA LATTE</div>
 </div>
 
 <div class="container">
@@ -146,16 +141,21 @@ body {
   <!-- CTA -->
   <div class="cta-box">
     <p>💚 Fresh dibuat saat order</p>
-    <p>⚡ Fast response WhatsApp</p>
+    <p>⚡ Klik langsung order tanpa chat panjang</p>
   </div>
 
-  <!-- MENU -->
+  <!-- MENU + WA AUTO ORDER -->
 
   <div class="card">
     <img src="matcha-latte.jpg">
     <div>
       <h3>🍵 Matcha Latte</h3>
       <div class="price">Rp 12K (BEST SELLER 🔥)</div>
+
+      <a href="https://wa.me/6287775620146?text=Halo%20saya%20mau%20order%20Matcha%20Latte%201%20cup%20(%20Rp12K%20)" 
+      class="btn wa" target="_blank">
+      💬 Order Auto
+      </a>
     </div>
   </div>
 
@@ -164,6 +164,11 @@ body {
     <div>
       <h3>🍃 Matcha Original</h3>
       <div class="price">Rp 10K</div>
+
+      <a href="https://wa.me/6287775620146?text=Halo%20saya%20mau%20order%20Matcha%20Original%201%20cup%20(%20Rp10K%20)" 
+      class="btn wa" target="_blank">
+      💬 Order Auto
+      </a>
     </div>
   </div>
 
@@ -172,6 +177,11 @@ body {
     <div>
       <h3>🍓 Matcha Pinkberry</h3>
       <div class="price">Rp 12K</div>
+
+      <a href="https://wa.me/6287775620146?text=Halo%20saya%20mau%20order%20Matcha%20Pinkberry%201%20cup%20(%20Rp12K%20)" 
+      class="btn wa" target="_blank">
+      💬 Order Auto
+      </a>
     </div>
   </div>
 
@@ -180,6 +190,11 @@ body {
     <div>
       <h3>🌊 Matcha Seasalt</h3>
       <div class="price">Rp 15K</div>
+
+      <a href="https://wa.me/6287775620146?text=Halo%20saya%20mau%20order%20Matcha%20Seasalt%201%20cup%20(%20Rp15K%20)" 
+      class="btn wa" target="_blank">
+      💬 Order Auto
+      </a>
     </div>
   </div>
 
@@ -188,32 +203,24 @@ body {
     <div>
       <h3>✨ Caramel Crumbel</h3>
       <div class="price">+ Rp 3K</div>
+
+      <a href="https://wa.me/6287775620146?text=Halo%20saya%20mau%20tambah%20Caramel%20Crumbel" 
+      class="btn wa" target="_blank">
+      ✨ Tambah Topping
+      </a>
     </div>
   </div>
-
-  <div class="card">
-    <img src="seasalt-cream.jpg">
-    <div>
-      <h3>✨ Seasalt Cream</h3>
-      <div class="price">+ Rp 3K</div>
-    </div>
-  </div>
-
-  <!-- BUTTON -->
-  <a href="https://wa.me/6287775620146" class="btn wa">
-    💬 Order Sekarang via WhatsApp
-  </a>
-
-  <a href="https://maps.app.goo.gl/wvKS5eaR32V3WFxc8" class="btn maps" target="_blank">
-    📍 Lihat Lokasi Kami
-  </a>
 
   <!-- LOCATION -->
   <div class="location">
-    <h3>📍 Lokasi</h3>
-    <p>Depan SMP 25, Bekasi Utara, Jawa Barat</p>
+    <h3>📍 Lokasi Kami</h3>
+    <p>Depan SMP 25, Bekasi Utara</p>
     <p>🕒 10.00 - 20.00</p>
     <p>🚚 Pickup only</p>
+
+    <a href="https://maps.app.goo.gl/wvKS5eaR32V3WFxc8" class="btn maps" target="_blank">
+      📍 Lihat di Google Maps
+    </a>
   </div>
 
 </div>
